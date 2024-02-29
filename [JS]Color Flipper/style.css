@@ -1,0 +1,138 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    color: #61dafb;
+    font-family: Roobert, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+.color {
+    color: var(--clr-primary-5);
+  }
+
+.colorContainer {
+    text-align: center;
+    margin-top: 60px;
+    padding: 20px;
+}
+
+.colorText {
+    font-size: 3em;
+    padding: 20px;
+    background-color: #282c34;
+    border-radius: 10px;
+}
+
+
+
+.navCenter {
+    display: flex;
+    position: fixed;
+    align-items: center;
+    justify-content: space-evenly;
+    top: 0;
+    left: 0;
+    width: 100%;
+    color: black;
+    background-size: cover;
+    padding-right: 10px ;
+}
+
+.navList {
+    display: flex;
+    list-style: none;
+}
+
+ul {
+    list-style-type: none;
+    text-decoration: none;
+}
+
+.navCenter h2 {
+    justify-content: left;
+}
+
+.navList li {
+    margin-right: 20px;
+}
+
+.navList li:last-child {
+    margin-right: 0;
+}
+
+.navList li a {
+    text-decoration: none;
+    color: #61dafb;
+    font-size: 20px;
+    transition: color 0.3s ease-in-out;
+}
+
+.navList li a:hover {
+    color: black;
+    /* Change the color on hover */
+}
+
+
+
+
+/* 
+#btnFlipper {
+    padding: 10px 20px;
+    font-size: 1.5em;
+    background-color: #61dafb;
+    color: #282c34;
+    border: none;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Arial', sans-serif;
+    
+}
+*/
+
+/* CSS */
+#btnFlipper {
+    appearance: none;
+    background-color: transparent;
+    border: 2px solid #1A1A1A;
+    border-radius: 15px;
+    box-sizing: border-box;
+    color: #3B3B3B;
+    cursor: pointer;
+    display: inline-block;
+    font-family: Roobert, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-size: 16px;
+    font-weight: 600;
+    line-height: normal;
+    margin: 0;
+    min-height: 60px;
+    min-width: 0;
+    outline: none;
+    padding: 16px 24px;
+    text-align: center;
+    text-decoration: none;
+    transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    width: 100%;
+    will-change: transform;
+}
+
+#btnFlipper:disabled {
+    pointer-events: none;
+}
+
+#btnFlipper:hover {
+    color: #fff;
+    background-color: #1A1A1A;
+    box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+    transform: translateY(-2px);
+}
+
+#btnFlipper:active {
+    box-shadow: none;
+    transform: translateY(0);
+}
